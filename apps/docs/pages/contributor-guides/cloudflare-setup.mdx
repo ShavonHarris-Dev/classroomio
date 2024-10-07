@@ -5,3 +5,46 @@ import { Callout } from 'nextra/components';
 # Cloudflare Setup
 
 In this guide, you will learn how to get your cloudflare environment variables. We use Cloudflare R2 for video uploads and the aim of this guide is to help you get the right variables to properly setup our backend.
+
+## How to get your Cloudfare Environment Variables 
+
+## Variable Example
+```bash
+#not-required
+CLOUDFLARE_BUCKET_DOMAIN=HTTPS://CDN.YOURDOMAIN.COM
+
+#required
+CLOUDFLARE_ACCOUNT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CLOUDFLARE_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CLOUDFLARE_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CLOUDFLARE_BUCKET_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+```
+
+### First things first
+- Login to Cloudflare 
+- Go to R2
+- It should be something like this 
+- Insert Image
+- Create a new bucket (if you don't already have one)
+
+1. CLOUDFLARE_ACCOUNT_ID
+		-INSERT IMAGE 
+
+2. CLOUDFLARE_BUCKET_ID
+	- Open the bucket you want to upload the videos to 
+  - Click on th settings tab
+  - Come to the R.2.dev subdomain and copy this id
+  - insert image 
+
+3. CLOUDEFARE_ACCESS_KEY & CLOUDFLARE_SECRET_ACCESS_KEY
+  - Click on **Manage R2 API TOKENS**
+  - insert image
+  - Click on **Create API Token**
+  - insert image 
+  - Add your token name and select **Object Read and Write**, then submit.
+  - insert image 
+  - You should be brought to this page
+  - insert image
+
